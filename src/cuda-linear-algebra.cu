@@ -1,13 +1,3 @@
-/*
- ============================================================================
- Name        : cuda-linear-algebra.cu
- Author      : Alex Minnaar
- Version     :
- Copyright   : Your copyright notice
- Description : CUDA compute reciprocals
- ============================================================================
- */
-
 #include <iostream>
 #include <numeric>
 #include <stdlib.h>
@@ -118,18 +108,13 @@ int main(void)
 
 	MatMul(m_a,m_b,m_c);
 
-
 	for(int i =0; i<9;i++)
 		printf("%f \n",m_c.elements[i]);
-
 
 
 	delete[] a_els;
 	delete[] b_els;
 	delete[] c_els;
-
-
-
 
 	return 0;
 }
